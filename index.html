@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OverBoost — максимальный буст системы</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #121212;
+      color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #1f1f1f;
+      padding: 20px;
+      text-align: center;
+      font-size: 2rem;
+      border-bottom: 2px solid #333;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background: #2a2a2a;
+      padding: 10px;
+    }
+    nav a {
+      color: #00bfff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .container {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    .search-box {
+      margin-bottom: 20px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      border: none;
+      background: #1f1f1f;
+      color: white;
+      font-size: 1rem;
+      margin-top: 10px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 5px;
+      border: none;
+      background: #00bfff;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .login-button {
+      background: transparent;
+      border: 2px solid #00bfff;
+      color: #00bfff;
+    }
+    .login-button:hover {
+      background: #00bfff;
+      color: white;
+    }
+    article {
+      background: #1e1e1e;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px #00000066;
+    }
+    article h2 {
+      margin-top: 0;
+    }
+    .post h2 a {
+      color: #00bfff;
+      text-decoration: none;
+    }
+    .post h2 a:hover {
+      text-decoration: underline;
+    }
+    form {
+      background: #1e1e1e;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #00000066;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #1f1f1f;
+      color: #888;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>OverBoost — максимальный буст системы</header>
+
+  <nav>
+    <a href="#">Главная</a>
+    <a href="#registerForm">Регистрация аккаунта</a>
+  </nav>
+
+  <div class="container">
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="🔍 Поиск по статьям..." oninput="filterArticles()">
+    </div>
+
+    <!-- 🔽 Форма регистрации -->
+    <form id="registerForm">
+      <h2>Регистрация</h2>
+      <input type="text" id="name" placeholder="Имя" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="password" id="password" placeholder="Пароль" required />
+      <button type="submit">Зарегистрироваться</button>
+      <button type="button" class="login-button" onclick="login()">Войти в аккаунт</button>
+    </form>
+
+    <!-- 🔽 Статьи -->
+    <!-- 🔽 Статьи -->
+<article class="post">
+  <h2><a href="guide1.html">🎮 Увеличение FPS в CS2</a></h2>
+  <p>Подробный гайд по настройкам графики и системным оптимизациям.</p>
+</article>
+
+<article class="post">
+  <h2><a href="guide2.html">🔧 Fix: Minecraft лагает</a></h2>
+  <p>Исправление лагов в Minecraft: моды, настройки, Java-оптимизация.</p>
+</article>
+
+<article class="post">
+  <h2><a href="guide3.html">🚀 Оптимизация Windows 10 для игр</a></h2>
+  <p>Отключение лишних служб, автообновлений и повышение отклика системы.</p>
+</article>
+
+<article class="post">
+  <h2><a href="guide_valorant.html">🎯 Повышаем FPS в Valorant</a></h2>
+  <p>Гайд по оптимизации Valorant — низкий input lag, высокая частота кадров.</p>
+</article>
+
+<article class="post">
+  <h2><a href="guide_warzone.html">⚔️ Увеличение FPS в Warzone</a></h2>
+  <p>Оптимальные настройки для плавного геймплея в Call of Duty: Warzone.</p>
+</article>
+
+<article class="post">
+  <h2><a href="guide_gta5.html">🚗 GTA V — оптимизация на слабых ПК</a></h2>
+  <p>Пошаговая инструкция по повышению производительности в GTA V.</p>
+</article>
+
+      <h2><a href="guide1.html">🎮 Увеличение FPS в CS2</a></h2>
+      <p>Подробный гайд по настройкам графики и системным оптимизациям.</p>
+    </article>
+
+    <article class="post">
+      <h2><a href="guide2.html">🔧 Fix: Minecraft лагает</a></h2>
+      <p>Исправление лагов в Minecraft: моды, настройки, Java-оптимизация.</p>
+    </article>
+
+    <article class="post">
+      <h2><a href="guide3.html">🚀 Оптимизация Windows 10 для игр</a></h2>
+      <p>Отключение лишних служб, автообновлений и повышение отклика системы.</p>
+    </article>
+  </div>
+
+  <footer>
+    &copy; 2025 OverBoost. Сделано для геймеров с любовью 🎮
+  </footer>
+
+  <script>
+    function filterArticles() {
+      const input = document.getElementById('searchInput').value.toLowerCase();
+      const posts = document.querySelectorAll('.post');
+      posts.forEach(post => {
+        const text = post.textContent.toLowerCase();
+        post.style.display = text.includes(input) ? 'block' : 'none';
+      });
+    }
+
+    document.getElementById("registerForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      localStorage.setItem("user", JSON.stringify({ name, email }));
+      window.location.href = "dashboard.html";
+    });
+
+    function login() {
+      const user = localStorage.getItem("user");
+      if (user) {
+        window.location.href = "dashboard.html";
+      } else {
+        alert("Сначала зарегистрируйтесь — аккаунт не найден.");
+      }
+    }
+  </script>
+
+</body>
+</html>

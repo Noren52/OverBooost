@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Fix — FPS в CS2</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #000;
+      color: #f0f0f0;
+    }
+    header {
+      background: #111;
+      padding: 20px;
+      text-align: center;
+      font-size: 2rem;
+    }
+    nav {
+      background: #1a1a1a;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: #00bfff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+    h1, h2 {
+      color: #fff;
+    }
+    pre {
+      background: #1a1a1a;
+      padding: 10px;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
+    a.button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #00bfff;
+      color: #fff;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+    a.button:hover {
+      background: #0099cc;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      color: #777;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>Fix — FPS в CS2</header>
+
+  <nav>
+    <a href="index.html">Главная</a>
+    <a href="articles.html">Все гайды</a>
+    <a href="contact.html">Контакты</a>
+  </nav>
+
+  <div class="container">
+    <h1>🚀 Как повысить FPS в Counter-Strike 2</h1>
+
+    <p>Следуй этим шагам, чтобы увеличить производительность:</p>
+
+    <h2>1. Параметры запуска</h2>
+    <pre>-novid -high -threads 4 -nojoy +fps_max 300</pre>
+
+    <h2>2. Настройки графики в игре</h2>
+    <ul>
+      <li>Разрешение: 1280x960 или меньше</li>
+      <li>Полноэкранный режим</li>
+      <li>Качество текстур: низкое</li>
+      <li>Сглаживание: выключено</li>
+    </ul>
+
+    <h2>3. Отключи фоновые процессы</h2>
+    <ul>
+      <li>Открой <code>msconfig</code> → автозагрузка</li>
+      <li>Выключи Discord, браузеры и прочее</li>
+    </ul>
+
+    <h2>4. Обнови драйверы</h2>
+    <p>
+      🔹 <a href="https://www.nvidia.com/Download/index.aspx" target="_blank">NVIDIA</a><br>
+      🔹 <a href="https://www.amd.com/en/support" target="_blank">AMD</a><br>
+      🔹 <a href="https://www.intel.ru/content/www/ru/ru/support/products/80939/graphics.html" target="_blank">Intel Graphics</a>
+    </p>
+
+    <h2>5. Конфиг (autoexec.cfg)</h2>
+    <pre>
+fps_max "300"
+mat_queue_mode "2"
+cl_forcepreload "1"
+rate "786432"
+    </pre>
+
+    <a href="index.html" class="button">← Назад ко всем гайдам</a>
+  </div>
+
+  <footer>
+    &copy; 2025 Fix — Все права защищены
+  </footer>
+
+</body>
+</html>
